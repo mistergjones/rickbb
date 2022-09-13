@@ -1,0 +1,159 @@
+/* .banner {
+    background: rgb(38, 114, 22);
+    background: -moz-linear-gradient(
+        left,
+        rgb(38, 114, 22) 0%,
+        rgb(19, 104, 22) 50%,
+        rgb(255, 255, 255) 50%,
+        rgb(255, 255, 255) 100%
+    );
+    background: -webkit-linear-gradient(
+        left,
+        rgb(38, 114, 22) 0%,
+        rgb(19, 104, 22) 50%,
+        rgb(255, 255, 255) 50%,
+        rgb(255, 255, 255) 100%
+    );
+    background: linear-gradient(
+        to right,
+        rgb(38, 114, 22) 0%,
+        rgb(19, 104, 22) 50%,
+        rgb(255, 255, 255) 50%,
+        rgb(255, 255, 255) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#267216', endColorstr='#ffffff',GradientType=1 );
+} */
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.leftSide {
+  font-family: "Saira Stencil One", cursive;
+  padding: 1rem;
+  font-size: 5rem;
+  background-color: rgb(38, 114, 22);
+  color: white;
+}
+
+.rightSide {
+  font-family: "Saira Stencil One", cursive;
+  padding: 1rem;
+  font-size: 5rem;
+  background-color: white;
+  color: rgb(38, 114, 22);
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(38, 114, 22);
+}
+
+.contact-form-container {
+  width: 50%;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
+}
+
+/* OVERRIDING BOOTSTRAP*/
+.nav-link {
+  color: rgb(38, 114, 22);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: rgb(38, 114, 22);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: red;
+}
+
+.icon-link {
+  color: rgb(38, 114, 22);
+}
+
+.icon-link:hover {
+  color: red;
+}
+
+/* FAQs */
+
+.accordion-button:not(.collapsed) {
+  color: rgb(38, 114, 22);
+  background-color: rgb(228, 255, 228);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.faqTextColour {
+  color: rgb(38, 114, 22);
+  font-weight: 700;
+}
+
+/* FLIP CARD */
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  font-size: 1rem;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(38, 114, 22);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
