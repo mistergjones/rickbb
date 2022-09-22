@@ -149,7 +149,8 @@ h3 {
 .flip-card-back {
   border: 3px solid blue;
   display: grid;
-  align-items: center;
+  /* align-items: center; */
+  align-content: center;
   background-color: rgb(38, 114, 22);
   color: white;
   transform: rotateY(180deg);
