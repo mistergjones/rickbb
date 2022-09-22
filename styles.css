@@ -147,7 +147,6 @@ h3 {
 
 /* Style the back side */
 .flip-card-back {
-  border: 3px solid blue;
   display: grid;
   /* align-items: center; */
   align-content: center;
